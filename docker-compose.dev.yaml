@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  web:
+    container_name: wpsFrontEnd-Development
+    build : .
+    ports :
+      - 6666:80 
