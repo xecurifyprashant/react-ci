@@ -37,7 +37,7 @@ pipeline {
       }
     stage('Deploy Production') {
       when {
-        branch 'master'
+        branch 'main'
       }
       steps {
         docker-compose -f docker-compose.prod.yml up -d
